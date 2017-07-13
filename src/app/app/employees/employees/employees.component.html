@@ -1,0 +1,42 @@
+<!--<h3>Employees Component</h3>
+<h3>{{title}}</h3>
+No of Employees: {{numofEmployees}}
+<hr>
+<h3>Employee Details</h3>
+Emp No:{{employee.emp_no}}
+<br> First Name: {{employee.first_name}}
+<br> Last Name:{{employee.last_name}}
+<br> cities:{{employee.cities}}
+<br>
+<br> object:{{employee}}
+<br>
+<br> JSON:{{employee|json}}-->
+<!--<br> City Name: <input type="text" [(ngModel)]="cityname" />
+<input type="submit" (click)="testCity()" value="Change City" />
+
+<br> String Interprelation: <input type="text" value="{{cityname}}" />
+
+<br> One way binding:<input type="text" [value]="cityname" />
+<br> hard coded: <input type="text" value="hardcoded" /> entered city is {{cityname}}
+
+<ul>
+    <li *ngFor="let a of actors">{{a}}</li>
+</ul>
+{{listOfEmployees|json}}-->
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Emp No</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let e of listOfEmployees">
+            <td> {{e.emp_no}}</td>
+            <td>{{e.first_name}}</td>
+            <td>{{e.last_name}}</td>
+        </tr>
+    </tbody>
+</table>
+ 
