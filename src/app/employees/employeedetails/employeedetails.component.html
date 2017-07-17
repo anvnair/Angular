@@ -1,0 +1,12 @@
+<p>
+  Employee Details for :  {{selectedEmpDetails.first_name}}
+</p>
+<a class="btn btn-sm btn-info"   (click)="goBack()"> go Back</a>
+<br/><br/><br/>
+Employee # {{selectedEmpDetails.emp_no}}<br/>
+Employee Name {{selectedEmpDetails.first_name}}<br/>
+Employee Name {{selectedEmpDetails.last_name}}<br/>
+
+<br/><br/><br/>
+
+<button [routerLink]="['/employees',employeeId,'edit']" type="button" class="btn btn-sm btn-info">Edit</button>
