@@ -1,10 +1,10 @@
-import { NgIntroPage } from './app.po';
+import { AfternoonPage } from './app.po';
 
-describe('ng-intro App', () => {
-  let page: NgIntroPage;
+describe('afternoon App', () => {
+  let page: AfternoonPage;
 
   beforeEach(() => {
-    page = new NgIntroPage();
+    page = new AfternoonPage();
   });
 
   it('should display welcome message', () => {

@@ -1,6 +1,6 @@
 import { browser, by, element } from 'protractor';
 
-export class NgIntroPage {
+export class AfternoonPage {
   navigateTo() {
     return browser.get('/');
   }
